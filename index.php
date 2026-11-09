@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Alfarero - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon/ca_logo.png" type="image/x-icon">
+</head>
+<body>
+    <input type="checkbox" id="modal-toggle" class="modal-toggle-hidden">
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html"><img src="images/carl_logo.png" alt="Carl Alfarero Logo"></a>
+                <input type="checkbox" id="mobile-menu-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation">
+                <label for="mobile-menu-toggle" class="nav-toggle-label" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </label>
+                <div class="nav-menu" id="primary-navigation">
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About</a>
+                    <a href="works.php">Works</a>
+                    <a href="contact.php">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home-text">
+            <h1>Carl Alfarero</h1>
+            <h2>Networking & IT Enthusiast</h2>
+            <p>
+                Passionate about creating network systems and exploring various aspects of IT.
+            </p>
+            <div>
+                <div>
+                    <label for="modal-toggle" class="primary-btn">Demo Reel</label>
+                </div>
+                <div>
+                    <a href="contact.html" class="secondary-btn">Contact me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <label for="modal-toggle" class="modal">
+        <iframe src="https://drive.google.com/file/d/1MR43BQYTN1TcBllEPHWyQ28aRCAIBY_D/preview" width=100" height="80%" class="modal-video"></iframe>
+    </label>
+    <footer>
+        <p>&copy; 2026 Carl Alfarero. All rights reserved</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.modal video');
+            
+            video.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+
+    <!-- View Resume Button -->
+    <a href="certificate/Carl_Alfarero_Resume.pdf" target="_blank" title="View Resume" class="resume-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/>
+        </svg>
+        View Resume
+    </a>
+</body>
+</html>
